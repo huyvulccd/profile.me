@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - Nguyễn Huy Vũ</title>
+<link rel="icon" href="./images/ic.png">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta property="og:locale" content="vi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Trang chủ">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="./scss/css/style.css">
+<script src="./js/script.js" defer></script>
+</head>
+<!-- Thích cá nhân hóa trỏ chuột luôn ko :)) 
+xem mẫu. Tìm file đuôi crs là dc 
+à
+thế tự custom được k. over
+nó k full màn à, t đang test ở cái profile info thôi ok
+-->
+<body oncontextmenu="false"> 
+    <div class="profile_container">
+        <div class="profile_header">
+            <div class="profile_header_btn">
+                <button class="btn_back btn_hover">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="btn_mode btn_hover">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun hide"></i>
+                </button>
+            </div>
+        </div>
+        <div class="profile_info first">
+            <div class="profile_image">
+                <img src="./images/me.png" alt="">
+            </div>
+            <div class="profile_name">
+                <p class="name">Nguyễn Huy Vũ</p>
+                <div class="tick">
+                    <img src="./images/flag.png" alt="">
+                </div>
+            </div>
+            <div class="profile_desc">
+                Tôi đang học để trở thành một Java backend Developer
+            </div>
+        </div>
+        <div class="profile_media first">
+            <a href="https://www.facebook.com/profile.php?id=100004815526942" title="Facebook">
+                <button class="media_item btn_hover">
+                    <i class="fab fa-facebook"></i>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/nguyenhuyvu.0412/" title="Instagram">
+                <button class="media_item btn_hover">
+                    <i class="fab fa-instagram"></i>
+                </button>
+            </a>
+            <a href="https://github.com/huyvulccd" title="Github">
+                <button class="media_item btn_hover">
+                    <i class="fab fa-github"></i>
+                </button>
+            </a>
+            <a href="mailto:huyvulccd@gmail.com
+" title="Gmail">
+                <button class="media_item btn_hover">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </a>
+            <a href="https://discordapp.com/users/6993" title="Discord">
+                <button class="media_item btn_hover">
+                    <i class="fab fa-discord"></i>
+                </button>
+            </a>
+            <a href="https://t.me/NgXuvYuh" title="Telegram">
+                <button class="media_item btn_hover">
+                    <i class="fab fa-telegram"></i>
+                </button>
+            </a>
+        </div>
+        <div class="profile_contact_btn first"> 
+            <a href="https://www.facebook.com/messages/t/100004815526942">
+                <button class="btn_hover message_btn">Nhắn tin</button>
+            </a>
+            <button class="btn_hover more-info_btn">Thông tin</button>
+        </div>
+        <div class="profile_cfs_btn first">
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScrysOWmoR-RIsONnPbovrkSTMhkxdMdFRqm7EP-XMOt1syOg/viewform?usp=sf_link">
+                <button class="btn_hover">
+                    Gửi confession ẩn danh cho tôi
+                </button>
+            </a>
+        </div>
+        <div class="profile second hide">
+            <pre><span class="public">public class</span> AboutMe {</pre>
+            <pre>	<span class="public">public static final</span> String <span class="final_str">nationality</span> = <span class="value">"Việt Nam"</span>;</pre>
+            <pre>	<span class="public">public static final</span> String <span class="final_str">saying</span> = <span class="value">"Xin lỗi, cảm ơn"</span>;</pre>
+            <pre>	<span class="public">public static final</span> int <span class="final_int">Time_blood_donation</span> = 2;</pre>
+            <br>
+            <pre>	<span class="public">public</span> AboutMe() {</pre>
+            <pre>		String <span class="variable">name</span> = <span class="value">"Nguyễn Huy Vũ"</span>;</pre>
+            <pre>		String <span class="variable">dateOfBirth</span> = <span class="value">"04-12-2002"</span>;</pre>
+            <pre>		String <span class="variable">gender</span> = <span class="value">"Male"</span>;</pre>
+            <pre>		String <span class="variable">address</span> = <span class="value">"Lào Cai - Việt Nam"</span>;</pre>
+            <br>
+            <pre>		String[] <span class="variable">education</span> = {<span class="value">"Mẫu giáo Ban Mai"</span>,</pre>
+            <pre>				      <span class="value">"Tiểu học và trung học cơ sở Xuân Tăng"</span>,</pre>
+            <pre>				      <span class="value">"Trung học phổ thông số 2 thành phố Lào Cai"</span>,</pre>
+            <br>
+            <pre>		String <span class="variable">university</span> = <span class="value">"Học viện Kỹ thuật mật mã"</span>;</pre>
+            <br>
+            <pre>		String[] <span class="variable">skills</span> = {<span  class="value">"C/C++"<span>,</span> "Java"<span>,</span> "Algorithms and Data Structures"</span>,</pre>
+            <pre>	      		    	   <span  class="value">"HTML"<span>,</span> "CSS"<span>,</span> "JSP/Servlet"<span>,</span> "Spring boot"<span>,</span> "Spring MVC"<span>,</span> "Soft skills"<span>,</span></span></pre>
+            <pre>	      		    	   <span  class="value">"Adobe Photoshop"<span>,</span> "Adobe Ilustrator"<span>,</span> "Adobe Premere"<span>,</span> "Adobe Lightroom"<span>,</span></span></pre>
+            <pre>			    	   <span  class="value">"Content Đỉnk kout"<span>,</span> "Đang học tiếp"</span>};</pre>
+            <br>
+            <pre>		String[] <span class="variable">more</span> = {<span class="value">"Giải 3 học sinh giỏi C/C++ cấp tỉnh"</span>,</pre>
+            <pre>				 <span class="value">"Cố vấn chuyên môn Tin CLB Toán Tin LCs2"</span>,</pre>
+            <pre>				 <span class="value">"TNV, Phó ban Truyền thông Đội Thanh niên vận động hiếu máu" <span>+</span></pre>
+            <pre>				 <span class="value">"Học viện Kỹ thuật mật mã"</span>,</pre>
+            <pre>				 <span class="value">"Trưởng ban Truyền thông Chi hội Thanh niên vận động hiến máu 26/3"</span>,</pre>
+            <pre>				 <span class="value">"Hội viên Hội Thanh niên vận động hiến máu Hà Nội    "</span>,</pre>
+            <br>
+            <pre>		String <span class="variable">Quotes</span> = <span class="public">"null"</span>;</pre>
+            <pre>	}</pre>
+            <br>
+            <pre>	<span class="public">public static</span> String life() {</pre>
+            <pre>		<span class="public">return</span> <span class="value">"Happy"</span>;</pre>
+            <pre>	}</pre>
+            <pre>	<span class="public">public static void</span> main(String[] <span class="variable">args</span>) {</pre>
+            <pre>		<span class="special_char">// <span class="todo">TODO</span> Auto-generated method stub</span></pre>
+            <pre>		AboutMe.<span style="font-style: italic;">life()</span>;</pre>
+            <pre>	}</pre>
+            <pre>}</pre>
+        </div>
+        <div class="profile_mobile hide">
+            C:\Users\ADMIN>AboutMe
+            <br>
+            <span style="font-weight: 900;"> Nationality:</span> Vietnam.  <br>
+            <span style="font-weight: 900;"> Saying:</span> Xin lỗi, cảm ơn.  <br>
+            <span style="font-weight: 900;"> Time_blood_donation:</span> 2.  <br>
+            <span style="font-weight: 900;"> Name:</span> Nguyễn Huy Vũ.  <br>
+            <span style="font-weight: 900;"> Date_of_birth:</span> Dec 4th, 2002.  <br>
+            <span style="font-weight: 900;"> Gender:</span> Male.  <br>
+            <span style="font-weight: 900;"> Address:</span> Lao Cai - VietNam.  <br>
+            <span style="font-weight: 900;"> Education:</span><br>
+            - Ban Mai Kindergarten school <br>
+            - Xuan Tang grade & primary school <br>
+            - LaoCai'2nd High School.  <br> <br>
+            
+            <span style="font-weight: 900;"> University:</span> Academy of Cryptography techniques.  <br>
+            <br>
+            <span style="font-weight: 900;"> Skills:</span> C/C++, Java, Algorithms and Data Structures, 
+            HTML, CSS, JSP/Servlet, Spring boot, Spring MVC Soft skills, Adobe Photoshop, Adobe Ilustrator, Adobe Premere, 
+            Adobe Lightroom, Content Đỉnk kout, v.v  <br>
+            <br>
+            <span style="font-weight: 900;"> More:</span><br>- Giải 3 học sinh giỏi C/C++ cấp tỉnh  <br>
+            - Cố vấn chuyên môn Tin CLB Toán Tin LCs2 <br>
+            - TNV, Phó ban Truyền thông Đội máu Mật mã. <br>
+            - Trưởng ban Truyền thông Chi hội Thanh niên vận động hiến máu 26/3. <br>
+            - Hội viên Hội Thanh niên vận động hiến máu Hà Nội.  <br>
+            ...  <br>
+            <span style="font-weight: 900;"> Quotes:</span> NULL  <br>
+            <span style="font-weight: 900;"> Life:</span>Happy everytime  <br>
+        </div>
+    </div>
+    <img src="./images/boom.gif" alt="" class="gif hide">
+</body>
+
+</html>
+<!-- thế cái first mang ý nghĩa gì -->
+<!-- Nó cx là class, r dùng để gọi bên js -->

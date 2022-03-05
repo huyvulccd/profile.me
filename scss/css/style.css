@@ -1,0 +1,386 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.625rem;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Consolas", monospace;
+  background-color: #e3edf7;
+  transition: all 0.4s ease-in-out;
+  cursor: url("./ak.png"), auto; 
+  position: relative;
+  /* Nhét ảnh vào folder css cho dễ. đâu làm đi t học */
+}
+
+.profile_container {
+  width: 350px;
+  margin: 0 4%;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e3edf7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.4s ease-in-out;
+  transition: width 1s linear;
+}
+
+.btn_hover {
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3edf7;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+  cursor: url(./ak.png), auto;
+}
+.btn_hover:hover {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), inset 8px 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile_header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: inherit;
+}
+.profile_header_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_header_btn .btn_back,
+.profile_header_btn .btn_mode {
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+.profile_info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+  
+}
+.profile_info .profile_image {
+  width: 90px;
+  height: 90px;
+  border-radius: 100rem;
+  overflow: hidden;
+  border: 5px solid #fff;
+  margin-bottom: 10px;
+}
+.profile_info .profile_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile_info .profile_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.profile_info .profile_name .name {
+  color: #31344b;
+  font-size: 25px;
+  font-weight: bold;
+  word-spacing: -8px;
+  transition: all 0.4s ease-in-out;
+}
+.profile_info .profile_name .tick {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_info .profile_name .tick img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile_info .profile_desc {
+  max-width: 300px;
+  color: #5d7799;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  word-spacing: -5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.profile_media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  gap: 10px 30px;
+  margin-bottom: 25px;
+}
+.profile_media .media_item {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_media .fa-facebook {
+  color: #1877f2;
+}
+.profile_media .fa-instagram {
+  border-radius: 5px;
+  color: white;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.profile_media .fa-github {
+  color: #333;
+}
+.profile_media .fa-envelope {
+  color: rgba(255, 0, 0, 0.582);
+}
+.profile_media .fa-discord {
+  color: #5774e0;
+}
+.profile_media .fa-telegram {
+  color: #0088cc;
+}
+
+.profile_contact_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.profile_contact_btn a {
+  width: 45%;
+}
+.profile_contact_btn a button {
+  width: 100%;
+}
+.profile_contact_btn button {
+  border-radius: 10px;
+  width: 45%;
+  height: 50px;
+  color: #5d7799;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.profile_cfs_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profile_cfs_btn a {
+  width: 80%;
+}
+.profile_cfs_btn a button {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  color: #5d7799;
+}
+
+.profile {
+  max-width: 80%;
+  line-height: 1;
+  word-wrap: break-word;
+  color: #000;
+  height: 100%;
+  margin-top: 50px;
+  font-size: 15px;
+}
+.profile .public {
+  color: #7f0055;
+  font-weight: bold;
+}
+.profile .final_str {
+  color: #0000c0;
+  font-weight: bold;
+  font-style: italic;
+}
+.profile .final_int {
+  color: #0000c0;
+  font-style: italic;
+}
+.profile .variable {
+  color: #6a3e3e;
+}
+.profile .value {
+  color: #2a00ff;
+}
+.profile .special_char {
+  color: #3f7f5f;
+}
+.profile .todo {
+  color: #7f9fd5;
+  font-weight: 700;
+}
+
+.profile_mobile {
+  color: #000;
+  display: none;
+  line-height: 1.5;
+  font-size: 10px;
+  max-width: 100%;
+  max-height: 500px;
+  word-wrap: break-word;
+  margin-top: 50px;
+  overflow-y: scroll;
+}
+
+body.dark_mode {
+  background-color: #303234;
+}
+body.dark_mode .profile_container {
+  background-color: #303234;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.3);
+}
+body.dark_mode .btn_hover {
+  background-color: #303234;
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.2), inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: box-shadow 0.4s;
+}
+body.dark_mode .btn_hover:hover {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.2), inset -2px -2px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 6px rgba(0, 0, 0, 0.6);
+}
+body.dark_mode .profile_header_btn .btn_back,
+body.dark_mode .profile_header_btn .btn_mode {
+  color: #fff;
+}
+body.dark_mode .profile_info .profile_image {
+  border: 5px solid #303234;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2);
+}
+body.dark_mode .profile_info .profile_name .name {
+  color: #fff;
+}
+body.dark_mode .profile_info .profile_desc {
+  color: #b0b3b8;
+}
+body.dark_mode .profile_media .fa-github {
+  color: #fff;
+}
+body.dark_mode .profile_contact_btn button {
+  color: #b0b3b8;
+}
+body.dark_mode .profile_cfs_btn button {
+  color: #b0b3b8;
+}
+body.dark_mode .profile {
+  line-height: 1;
+  color: #dddddd;
+}
+body.dark_mode .profile .public {
+  color: #ff636f;
+  font-weight: bold;
+}
+body.dark_mode .profile .final_str {
+  color: #8181f8;
+  font-weight: bold;
+  font-style: italic;
+}
+body.dark_mode .profile .final_int {
+  color: #8181f8;
+  font-style: italic;
+}
+body.dark_mode .profile .variable {
+  color: #7d7deb;
+}
+body.dark_mode .profile .value {
+  color: #95d46a;
+}
+body.dark_mode .profile .special_char {
+  color: #3f7f5f;
+}
+body.dark_mode .profile .todo {
+  color: #7f9fd5;
+  font-weight: 700;
+}
+body.dark_mode .profile_mobile {
+  color: #00dc00;
+}
+
+.profile_container.active {
+  min-height: 600px;
+  animation: expand 1s linear;
+  max-width: none;
+  width: 80%;
+}
+
+/* Gif */
+.gif {
+  position: absolute;
+}
+
+@keyframes expand {
+  0% {
+    width: 350px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .profile_mobile.active {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .profile {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .profile_mobile.active {
+    display: block;
+    font-size: 14px;
+  }
+
+  .profile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
