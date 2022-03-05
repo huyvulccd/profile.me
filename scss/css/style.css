@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Consolas", monospace;
+  font-family: "inherit", monospace;
   background-color: #e3edf7;
   transition: all 0.4s ease-in-out;
   cursor: url("./ak.png"), auto; 
@@ -103,11 +103,15 @@ body {
   overflow: hidden;
   border: 5px solid #fff;
   margin-bottom: 10px;
+  
+  line-height: 150%;
 }
 .profile_info .profile_image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  
+  line-height: 150%;
 }
 .profile_info .profile_name {
   display: flex;
@@ -121,6 +125,7 @@ body {
   font-weight: bold;
   word-spacing: -8px;
   transition: all 0.4s ease-in-out;
+  line-height: 150%;
 }
 .profile_info .profile_name .tick {
   width: 20px;
@@ -141,6 +146,7 @@ body {
   color: #5d7799;
   font-size: 20px;
   text-align: center;
+  line-height: 100%;
   letter-spacing: 0.2px;
   word-spacing: -5px;
   transition: all 0.4s ease-in-out;
@@ -228,7 +234,7 @@ body {
   color: #000;
   height: 100%;
   margin-top: 50px;
-  font-size: 15px;
+  font-size: 20px;
 }
 .profile .public {
   color: #7f0055;
