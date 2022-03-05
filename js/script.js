@@ -9,8 +9,16 @@ const main_ele = document.querySelectorAll(".first"); // first là những cái 
 const second_ele = document.querySelector(".second");
 const profile_mobile = document.querySelector(".profile_mobile");
 
+
+
 function blockInspect() {
+  window.addEventListener("keyup", function(e) {
+    if (e.keyCode == 44) {
+      return false;
+    }
+  });
   document.onkeydown = function (e) {
+    console.log(e.keyCode)
     if (event.keyCode == 123) {
       return false;
     }
@@ -24,6 +32,9 @@ function blockInspect() {
       return false;
     }
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      return false;
+    }
+    if (e.shiftKey && e.keyCode == 'U'.charCodeAt(0)) {
       return false;
     }
   }
@@ -82,7 +93,6 @@ document.addEventListener("click", (e)=> {
 })
 
 document.addEventListener("mousemove", function (e) {
-  console.log(e.pageX, e.pageY);
   gif.style.left = e.pageX - 48.7 + "px";
   gif.style.top = e.pageY - 18.8 + "px";
 });

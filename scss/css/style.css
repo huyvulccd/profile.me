@@ -34,7 +34,13 @@ body {
   transition: all 0.4s ease-in-out;
   cursor: url("./ak.png"), auto; 
   position: relative;
-  /* Nhét ảnh vào folder css cho dễ. đâu làm đi t học */
+-moz-user-select: none !important;
+-webkit-touch-callout: none!important;
+-webkit-user-select: none!important;
+-khtml-user-select: none!important;
+-moz-user-select: none!important;
+-ms-user-select: none!important;
+user-select: none!important;
 }
 
 .profile_container {
@@ -51,6 +57,7 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(255, 255, 255, 0.5);
   transition: background-color 0.4s ease-in-out;
   transition: width 1s linear;
+  transform: scale(1.5);
 }
 
 .btn_hover {
@@ -353,6 +360,7 @@ body.dark_mode .profile_mobile {
   animation: expand 1s linear;
   max-width: none;
   width: 80%;
+  transform: scale(1);
 }
 
 /* Gif */
@@ -369,9 +377,13 @@ body.dark_mode .profile_mobile {
   }
 }
 @media (max-width: 768px) {
+  .profile_container {
+    transform: scale(1);
+  }
   .profile_mobile.active {
     display: block;
     overflow-y: scroll;
+    transform: scale(1);
   }
 
   .profile {
@@ -379,9 +391,13 @@ body.dark_mode .profile_mobile {
   }
 }
 @media (max-width: 1200px) {
+  .profile_container {
+    transform: scale(1);
+  }
   .profile_mobile.active {
     display: block;
     font-size: 14px;
+    transform: scale(1);
   }
 
   .profile {
