@@ -19,8 +19,10 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <link rel="stylesheet" href="./scss/css/style.css">
 <script src="./js/script.js" defer></script>
+<script language="javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 </head>=
-<body oncontextmenu="false"> 
+
+<body oncontextmenu="false">
     <div class="profile_container">
         <div class="profile_header">
             <div class="profile_header_btn">
@@ -44,11 +46,11 @@
                 </div>
             </div>
             <div class="profile_desc">
-                Tôi đang học để trở thành một Java backend Developer
+                BE A EXCELLENT DEVELOPER
             </div>
         </div>
         <div class="profile_media first">
-            <a href="https://www.facebook.com/profile.php?id=100004815526942" title="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=100004815526942" id="facebook" title="Facebook">
                 <button class="media_item btn_hover">
                     <i class="fab fa-facebook"></i>
                 </button>
@@ -80,7 +82,7 @@
                 </button>
             </a>
         </div>
-        <div class="profile_contact_btn first"> 
+        <div class="profile_contact_btn first">
             <a href="https://www.messenger.com/t/100004815526942/">
                 <button class="btn_hover message_btn">Nhắn tin</button>
             </a>
@@ -95,81 +97,32 @@
             </a>
         </div>
         <div class="profile second hide">
-            <pre><span class="public">public class</span> AboutMe {</pre>
-            <pre>	<span class="public">public static final</span> String <span class="final_str">nationality</span> = <span class="value">"Việt Nam"</span>;</pre>
-            <pre>	<span class="public">public static final</span> String <span class="final_str">saying</span> = <span class="value">"Xin lỗi, cảm ơn"</span>;</pre>
-            <pre>	<span class="public">public static final</span> int <span class="final_int">Time_blood_donation</span> = 3;</pre>
-            <br>
-            <pre>	<span class="public">public</span> AboutMe() {</pre>
-            <pre>		String <span class="variable">name</span> = <span class="value">"Nguyễn Huy Vũ"</span>;</pre>
-            <pre>		String <span class="variable">dateOfBirth</span> = <span class="value">"04-12-2002"</span>;</pre>
-            <pre>		String <span class="variable">gender</span> = <span class="value">"Male"</span>;</pre>
-            <pre>		String <span class="variable">address</span> = <span class="value">"Lào Cai - Việt Nam"</span>;</pre>
-            <pre>		String <span class="variable">girlFriend</span> = <span class="public">"null"</span>;</pre>
-            <br>
-            <pre>		String[] <span class="variable">education</span> = {<span class="value">"Mẫu giáo Ban Mai"</span>,</pre>
-            <pre>				      <span class="value">"Tiểu học và trung học cơ sở Xuân Tăng"</span>,</pre>
-            <pre>				      <span class="value">"Trung học phổ thông số 2 thành phố Lào Cai"</span>,</pre>
-            <br>
-            <pre>		String <span class="variable">university</span> = <span class="value">"Học viện Kỹ thuật mật mã"</span>;</pre>
-            <br>
-            <pre>		String[] <span class="variable">skills</span> = {<span  class="value">"C/C++"<span>,</span> "Java"<span>,</span> "Algorithms and Data Structures"</span>,</pre>
-            <pre>	      		    	   <span  class="value">"HTML"<span>,</span> "CSS"<span>,</span> "Spring boot"<span>,</span> "Spring MVC"<span>,</span> "Soft skills"<span>,</span></span></pre>
-            <pre>	      		    	   <span  class="value">"Adobe Photoshop"<span>,</span> "Adobe Ilustrator"<span>,</span> "Adobe Premere"<span>,</span> "Adobe Lightroom"<span>,</span></span></pre>
-            <pre>			    	   <span  class="value">"Content Đỉnk kout"<span>,</span> "Đang học tiếp"</span>};</pre>
-            <br>
-            <pre>		String[] <span class="variable">more</span> = {<span class="value">"Giải 3 học sinh giỏi C/C++ cấp tỉnh"</span>,</pre>
-            <pre>				 <span class="value">"Cố vấn chuyên môn Tin CLB Toán Tin LCs2"</span>,</pre>
-            <pre>				 <span class="value">"TNV, Phó ban Truyền thông Đội Thanh niên vận động hiếu máu" <span>+</span></pre>
-            <pre>				 <span class="value">"Học viện Kỹ thuật mật mã"</span>,</pre>
-<!--             <pre>				 <span class="value">"Trưởng ban Truyền thông Chi hội Thanh niên vận động hiến máu 26/3"</span>,</pre> -->
-            <pre>				 <span class="value">"Hội viên Hội Thanh niên vận động hiến máu Hà Nội    "</span>,</pre>
-            <br>
-            <pre>		String <span class="variable">Quotes</span> = <span class="public">"null"</span>;</pre>
-            <pre>	}</pre>
-            <br>
-            <pre>	<span class="public">public static</span> String life() {</pre>
-            <pre>		<span class="public">return</span> <span class="value">"Happy"</span>;</pre>
-            <pre>	}</pre>
-            <pre>	<span class="public">public static void</span> main(String[] <span class="variable">args</span>) {</pre>
-            <pre>		<span class="special_char">// <span class="todo">TODO</span> Auto-generated method stub</span></pre>
-            <pre>		AboutMe.<span style="font-style: italic;">life()</span>;</pre>
-            <pre>	}</pre>
-            <pre>}</pre>
-        </div>
-        <div class="profile_mobile hide">
-            C:\Users\ADMIN>AboutMe
-            <br>
-            <span style="font-weight: 900;"> Nationality:</span> Vietnam.  <br>
-            <span style="font-weight: 900;"> Saying:</span> Xin lỗi, cảm ơn.  <br>
-            <span style="font-weight: 900;"> Time_blood_donation:</span> 3.  <br>
-            <span style="font-weight: 900;"> Name:</span> Nguyễn Huy Vũ.  <br>
-            <span style="font-weight: 900;"> Date_of_birth:</span> Dec 4th, 2002.  <br>
-            <span style="font-weight: 900;"> Gender:</span> Male.  <br>
-            <span style="font-weight: 900;"> Address:</span> Lao Cai - VietNam.  <br>
-            <span style="font-weight: 900;"> Girl_friends:</span> null.  <br>
-            <span style="font-weight: 900;"> Education:</span><br>
-            - Ban Mai Kindergarten school <br>
-            - Xuan Tang grade & primary school <br>
-            - LaoCai'2nd High School.  <br> <br>
-            
-            <span style="font-weight: 900;"> University:</span> Academy of Cryptography techniques.  <br>
-            <br>
-            <span style="font-weight: 900;"> Skills:</span> C/C++, Java, Algorithms and Data Structures, 
-            HTML, CSS, JSP/Servlet, Spring boot, Spring MVC Soft skills, Adobe Photoshop, Adobe Ilustrator, Adobe Premere, 
-            Adobe Lightroom, Content Đỉnk kout, v.v  <br>
-            <br>
-            <span style="font-weight: 900;"> More:</span><br>- Giải 3 học sinh giỏi C/C++ cấp tỉnh  <br>
-            - Cố vấn chuyên môn Tin CLB Toán Tin LCs2 <br>
-            - TNV, Phó ban Truyền thông Đội máu Mật mã. <br>
-<!--             - Trưởng ban Truyền thông Chi hội Thanh niên vận động hiến máu 26/3. <br> -->
-            - Hội viên Hội Thanh niên vận động hiến máu Hà Nội.  <br>
-            ...  <br>
-            <span style="font-weight: 900;"> Quotes:</span> NULL  <br>
-            <span style="font-weight: 900;"> Life:</span>Happy everytime  <br>
+
         </div>
     </div>
     <img src="./images/boom.gif" alt="" class="gif hide">
 </body>
+<script language="javascript">
+
+    // Bắt đầu code jquery
+    $(document).ready(function () {
+        // $('#facebook').attr('href', 'https://www.facebook.com/thongtinchinhphu'); attr
+        let event = 'click';
+        let cssSelector = "";
+        
+        $(document).on(event, cssSelector, function () {
+
+        });
+        
+        $(cssSelector).click(function () {
+
+        });
+
+        $(cssSelector).addEventListener("click", () => {
+
+        });
+    });
+
+</script>
 
 </html>

@@ -11,35 +11,7 @@ const profile_mobile = document.querySelector(".profile_mobile");
 
 
 
-function blockInspect() {
-  window.addEventListener("keyup", function(e) {
-    if (e.keyCode == 44) {
-      return false;
-    }
-  });
-  document.onkeydown = function (e) {
-    console.log(e.keyCode)
-    if (event.keyCode == 123) {
-      return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.shiftKey && e.keyCode == 'U'.charCodeAt(0)) {
-      return false;
-    }
-  }
-}
-blockInspect();
+
 
 darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark_mode")
